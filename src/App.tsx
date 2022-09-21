@@ -1,12 +1,11 @@
 import React from 'react'
-import './App.css'
+import './App.module.css'
+import {Select} from "./components/Select/Select"
 
 function App() {
-    return (
-        <div>
-            Selector App
-        </div>
-    )
+    return <>
+        <Select onChange={} options={}/>
+    </>
 }
 
 export default App
