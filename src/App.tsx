@@ -1,11 +1,12 @@
 import React from 'react'
-import './App.module.css'
+import './App.css'
+import Box from "./components/Box/Box"
 
 function App() {
 
-    return <>
-
-    </>
+    return <div>
+        <Box  value='X' onClick={undefined}/>
+    </div>
 }
 
 export default App
