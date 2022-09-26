@@ -16,9 +16,16 @@ export interface Pokemon {
     }
 }
 
-interface Detail {
+export interface Detail {
     id: number
     isOpened: boolean
+}
+
+export interface PokemonDetail extends Pokemon {
+    abilities?: {
+        ability: string
+        name: string
+    }[]
 }
 
 const App: React.FC = () => {
@@ -58,10 +65,16 @@ const App: React.FC = () => {
     return <div>
         <div className='container'>
             <header className='pokemonHeader'>Pokemon</header>
-            <PokemonCollection pokemons={pokemons}/>
-            <div className='btn'>
-                <button onClick={nextPage}>{loading ? 'loading...' : 'Load more'}</button>
-            </div>
+            <PokemonCollection
+                pokemons={pokemons}
+                viewDetail={viewDetail}
+                setViewDetail={setViewDetail}
+            />
+            {!viewDetail.isOpened && (
+                <div className='btn'>
+                    <button onClick={nextPage}>{loading ? 'loading...' : 'Load more'}</button>
+                </div>
+            )}
         </div>
     </div>
 }

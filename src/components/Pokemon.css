@@ -7,7 +7,8 @@
     align-items: center;
     flex-wrap: wrap;
 }
-.collectionContainerActive{
+
+.collectionContainerActive {
     color:#3d405b;
     margin-top: 2rem;
     font-weight: 600;
@@ -17,21 +18,25 @@
     align-items: center;
     flex-wrap: wrap;
 }
+
 .overlay{
     width:100vw;
     height: 100vh;
 }
+
 .detailContainer {
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
 }
-.detailName{
+
+.detailName {
     font-size: 1.5rem;
     color:#3d405b;
     font-weight: 700;
 }
+
 .detailInfo {
     background-color: #f2cc8f;
     background-image: linear-gradient(0deg, #f2cc8f 0%, #f8f3d9 100%);
@@ -40,11 +45,13 @@
     justify-content: center;
     align-items: center;
 }
-.detailAbitlity{
+
+.detailAbility {
     color: #3d405b;
     font-weight: 700;
     font-size: 1.25rem;
 }
+
 .detailSkill {
     align-self: flex-start;
     flex-wrap: wrap;
@@ -53,15 +60,18 @@
     margin: 1rem;
     text-align: start;
 }
-.detailClose{
+
+.detailClose {
     cursor: pointer;
     margin: 1rem 1rem 0 auto;
     font-size: 1.5rem;
 }
+
 .pokemonName {
     margin-top: 0.5rem;
 }
-.pokemonListContainer{
+
+.pokemonListContainer {
     display: flex;
     cursor:pointer;
     flex-direction: column;
@@ -91,7 +101,6 @@
     justify-content: space-around;
 }
 
-
 button {
     cursor: pointer;
     background-color: #81b29a;
@@ -102,6 +111,7 @@ button {
     border:none;
     transition: 200ms ease-in-out;
 }
+
 button:hover {
     cursor: pointer;
     background-color: #61997e;
@@ -109,4 +119,5 @@ button:hover {
     padding:0.5rem;
     border-radius: 12px;
     font-size: 1.5rem;
-    border:none;}
+    border:none;
+}
